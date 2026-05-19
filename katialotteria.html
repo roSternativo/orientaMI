@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lotteria Katia - OrientaMI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="navigazione-rapida">
+
+    <button onclick="vaiHome()">
+      🏠 Home
+    </button>
+
+    <button onclick="vaiIndietro()">
+      ◀️ Indietro
+    </button>
+
+    <button onclick="vaiAvanti()">
+      ▶️ Avanti
+    </button>
+
+  </div>
+
+  <div class="accessibilita">
+
+    <button onclick="leggiPagina()">
+      🔊 Ascolta pagina
+    </button>
+
+    <button onclick="bloccaLettura()">
+      ⏹️ Blocca lettura
+    </button>
+
+    <button onclick="attivaContrasto()">
+      🌙 Alto contrasto
+    </button>
+
+    <button onclick="testoGrande()">
+      🔎 Testo grande
+    </button>
+
+  </div>
+
+  <header>
+
+    <h1 class="nome-docente">
+      Lotteria Katia
+    </h1>
+
+    <p class="info-docente">
+      Piano Terra — Stanza 6
+    </p>
+
+  </header>
+
+  <main>
+
+   <button onclick="avviaPercorsoKatia()" class="porta-mi">
+  📍 PORTAMI
+</button>
+
+<p class="testo-portami">
+  Seleziona il pulsante PORTAMI per avviare la guida audio verso l’ufficio della docente
+</p>
+
+<button onclick="bloccaAudioPercorso()" class="blocca-audio">
+  ⏹️ Blocca audio percorso
+</button>
+
+    <section class="sezione-planimetrie">
+
+      <h2>Planimetria del percorso</h2>
+
+      <p>
+        Consulta la planimetria del piano terra per visualizzare il percorso dell’ufficio della docente.
+      </p>
+
+      <div class="contenitore-planimetria">
+
+        <h3>Piano terra</h3>
+
+        <img
+          src="planimetria-piano-terra.jpg"
+          alt="Planimetria del piano terra con riferimento all’ufficio di Lotteria Katia"
+          class="planimetria"
+        >
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

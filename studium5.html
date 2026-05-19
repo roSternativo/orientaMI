@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Servizi Studium 5 - OrientaMI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="navigazione-rapida">
+
+    <button onclick="vaiHome()">
+      🏠 Home
+    </button>
+
+    <button onclick="vaiIndietro()">
+      ◀️ Indietro
+    </button>
+
+    <button onclick="vaiAvanti()">
+      ▶️ Avanti
+    </button>
+
+  </div>
+
+  <div class="accessibilita">
+
+    <button onclick="leggiPagina()">
+      🔊 Ascolta pagina
+    </button>
+
+    <button onclick="bloccaLettura()">
+      ⏹️ Blocca lettura
+    </button>
+
+    <button onclick="attivaContrasto()">
+      🌙 Alto contrasto
+    </button>
+
+    <button onclick="testoGrande()">
+      🔎 Testo grande
+    </button>
+
+  </div>
+
+  <header>
+
+  <h1>SERVIZI STUDIUM 5</h1>
+
+  <p class="testo-seleziona">
+    Seleziona l’area che desideri raggiungere
+  </p>
+
+  <button onclick="avviaStudium5()" class="porta-mi">
+    📍 PORTAMI
+  </button>
+
+  <p class="testo-portami">
+    Seleziona il pulsante PORTAMI per avviare la guida audio verso Studium 5
+  </p>
+
+  <button onclick="bloccaAudioPercorso()" class="blocca-audio">
+    ⏹️ Blocca audio percorso
+  </button>
+
+</header>
+
+  <main>
+
+    <button>
+      Ascensori
+    </button>
+
+    <button onclick="window.location.href='docenti.html'">
+      Uffici docenti
+    </button>
+
+    <button>
+      Aula Papuli
+    </button>
+
+    <button onclick="window.location.href='aulastudio.html'">
+      Aula Studio
+    </button>
+
+    <button>
+      Servizi igienici
+    </button>
+
+    <button>
+      Macchinette
+    </button>
+
+    <button>
+      Uscite d’emergenza
+    </button>
+    <section class="sezione-planimetrie">
+
+  <h2>Planimetrie Studium 5</h2>
+
+  <p>
+    Consulta le planimetrie dei diversi piani per orientarti all’interno dell’edificio
+  </p>
+
+  <div class="contenitore-planimetria">
+
+    <h3>Piano seminterrato</h3>
+
+    <img
+      src="planimetria-seminterrato.png"
+      alt="Planimetria del piano seminterrato di Studium 5"
+      class="planimetria"
+    >
+
+  </div>
+
+  <div class="contenitore-planimetria">
+
+    <h3>Piano terra</h3>
+
+    <img
+  src="planimetria-piano-terra.jpg"
+  alt="Planimetria del piano terra di Studium 5"
+  class="planimetria"
+>
+
+  </div>
+
+  <div class="contenitore-planimetria">
+
+    <h3>Primo piano</h3>
+
+    <img
+      src="planimetria-primo-piano.png"
+      alt="Planimetria del primo piano di Studium 5"
+      class="planimetria"
+    >
+
+  </div>
+
+  <div class="contenitore-planimetria">
+
+    <h3>Secondo piano</h3>
+
+    <img
+  src="planimetria-secondo-piano.png"
+  alt="Planimetria del secondo piano di Studium 5"
+  class="planimetria"
+>
+
+  </div>
+
+</section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,992 @@
+body {
+  font-family: Arial, sans-serif;
+  color: black;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.7;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ),
+    url("sfondo-home.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+
+/* NAVIGAZIONE RAPIDA: HOME - INDIETRO - AVANTI */
+
+.navigazione-rapida {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+
+  z-index: 1100;
+}
+
+.navigazione-rapida button {
+  width: auto;
+  max-width: none;
+
+  padding: 7px 9px;
+
+  font-size: 0.8rem;
+
+  border-radius: 8px;
+  border: 2px solid black;
+
+  background-color: white;
+  color: black;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  margin-top: 0;
+}
+
+
+
+/* PULSANTI ACCESSIBILITÀ */
+
+.accessibilita {
+  position: fixed;
+
+  top: 65px;
+  left: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 1px;
+
+  width: 220px;
+
+  z-index: 1000;
+}
+
+.accessibilita button {
+  max-width: 180px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  border-radius: 8px;
+}
+
+
+
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  margin-left: 260px;
+
+  padding: 40px;
+}
+
+
+
+/* LOGO */
+
+.logo {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+
+
+/* UNIVERSITÀ */
+
+.universita {
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+
+
+/* TITOLI */
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+
+
+/* TESTI */
+
+p {
+  max-width: 850px;
+  margin-bottom: 15px;
+}
+
+
+
+/* TESTO HOME */
+
+.testo-home {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testo-home p {
+  font-size: 1.25rem;
+  margin-bottom: 14px;
+}
+
+.intro-principale {
+  font-size: 1.8rem !important;
+  font-weight: bold;
+  margin-bottom: 18px !important;
+}
+
+
+
+/* CONTENUTO */
+
+main {
+  margin-left: 260px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-top: 30px;
+
+  padding: 20px;
+}
+
+
+
+/* PULSANTI GENERALI */
+
+button {
+  width: 100%;
+  max-width: 600px;
+
+  padding: 20px;
+
+  margin-top: 15px;
+
+  border-radius: 12px;
+  border: 2px solid black;
+
+  background-color: #f2f2f2;
+
+  font-size: 1.2rem;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #dddddd;
+}
+
+
+
+/* FOCUS ACCESSIBILE */
+
+:focus-visible {
+  outline: 4px solid yellow;
+  outline-offset: 4px;
+}
+
+
+
+/* TESTO GRANDE */
+
+.grande {
+  font-size: 28px;
+}
+
+
+
+/* RICERCA DOCENTI */
+
+.ricerca {
+  width: 100%;
+  max-width: 600px;
+
+  padding: 20px;
+
+  margin-top: 20px;
+
+  border-radius: 12px;
+
+  border: 2px solid black;
+
+  font-size: 1.2rem;
+}
+
+.microfono {
+  max-width: 300px;
+}
+
+
+
+/* DOCENTI */
+
+.docente {
+  width: 100% !important;
+  max-width: 700px !important;
+
+  margin-top: 20px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding: 0 !important;
+
+  border: none !important;
+
+  text-align: center !important;
+}
+
+.docente button {
+  width: 100% !important;
+  max-width: 700px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  display: block !important;
+
+  text-align: center !important;
+}
+
+
+
+/* PULSANTE PORTAMI */
+
+.porta-mi {
+  font-size: 2rem;
+  padding: 25px;
+  margin: 20px 0;
+  width: 100%;
+
+  background-color: white !important;
+  color: black !important;
+
+  border: 3px solid black !important;
+  border-radius: 12px;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+/* BLOCCA AUDIO PERCORSO */
+
+.blocca-audio {
+  max-width: 220px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  background-color: white;
+  color: black;
+
+  border: 2px solid black;
+  border-radius: 8px;
+
+  font-weight: bold;
+}
+
+
+
+/* PAGINA LOTTERIA KATIA */
+
+.nome-docente {
+  font-size: 4.5rem;
+  margin-bottom: 5px;
+}
+
+.info-docente {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.testo-portami {
+  font-size: 1.4rem;
+  margin-top: -15px;
+  margin-bottom: 30px;
+  max-width: 750px;
+  text-align: center;
+}
+
+
+
+/* MAPPE E PLANIMETRIE */
+
+.mappa {
+  width: 100%;
+  max-width: 800px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.sezione-planimetrie {
+  width: 100%;
+  max-width: 950px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.sezione-planimetrie h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.sezione-planimetrie h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.contenitore-planimetria {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.planimetria {
+  width: 100%;
+  max-width: 900px;
+  border: 3px solid black;
+  border-radius: 15px;
+  background-color: white;
+}
+
+
+
+/* ALTO CONTRASTO */
+
+body.contrasto {
+  background-color: black !important;
+  background-image: none !important;
+  color: white !important;
+}
+
+body.contrasto header,
+body.contrasto main,
+body.contrasto section,
+body.contrasto div,
+body.contrasto p,
+body.contrasto h1,
+body.contrasto h2,
+body.contrasto h3 {
+  background-color: black !important;
+  background-image: none !important;
+  color: white !important;
+}
+
+body.contrasto button {
+  background-color: black !important;
+  color: white !important;
+  border: 3px solid white !important;
+}
+
+body.contrasto input {
+  background-color: black !important;
+  color: white !important;
+  border: 3px solid white !important;
+}
+
+body.contrasto img {
+  border: 3px solid white !important;
+}
+
+body.contrasto .docente,
+body.contrasto .sezione-mappa,
+body.contrasto .sezione-planimetrie {
+  background-color: black !important;
+  color: white !important;
+  border-color: white !important;
+}
+.testo-seleziona {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.testo-portami {
+  font-size: 1.3rem;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  max-width: 750px;
+  text-align: center;
+}
+/* DIMENSIONI UNIFORMI DI TUTTE LE PAGINE */
+
+header,
+main {
+  max-width: 1100px;
+  margin-right: auto;
+}
+
+header {
+  min-height: auto;
+}
+
+main {
+  min-height: auto;
+}
+
+
+
+/* TITOLI UNIFORMI */
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+
+
+/* TESTI UNIFORMI */
+
+p {
+  font-size: 1.2rem;
+}
+
+
+
+/* PULSANTI UNIFORMI */
+
+button {
+  max-width: 600px;
+  font-size: 1.2rem;
+}
+
+
+
+/* PORTAMI UNIFORME */
+
+.porta-mi {
+  max-width: 600px;
+  font-size: 2rem;
+}
+
+
+
+/* BLOCCA AUDIO UNIFORME */
+
+.blocca-audio {
+  max-width: 220px;
+  font-size: 0.9rem;
+}
+
+
+
+/* ACCESSIBILITÀ UNIFORME */
+
+.accessibilita button {
+  max-width: 180px;
+  font-size: 0.9rem;
+}
+
+
+
+/* NAVIGAZIONE RAPIDA UNIFORME */
+
+.navigazione-rapida button {
+  font-size: 0.8rem;
+  padding: 7px 9px;
+}
+/* SEZIONE PORTAMI UNIFORME IN TUTTE LE PAGINE */
+
+.porta-mi {
+  width: 100% !important;
+  max-width: 600px !important;
+
+  font-size: 2rem !important;
+  font-weight: bold !important;
+
+  padding: 25px !important;
+
+  margin-top: 20px !important;
+  margin-bottom: 8px !important;
+
+  background-color: white !important;
+  color: black !important;
+
+  border: 3px solid black !important;
+  border-radius: 12px !important;
+
+  text-align: center !important;
+}
+
+.testo-portami {
+  width: 100% !important;
+  max-width: 600px !important;
+
+  font-size: 1.3rem !important;
+
+  margin-top: 0 !important;
+  margin-bottom: 15px !important;
+
+  text-align: center !important;
+}
+
+.blocca-audio {
+  width: 100% !important;
+  max-width: 220px !important;
+
+  padding: 10px 12px !important;
+
+  font-size: 0.9rem !important;
+  font-weight: bold !important;
+
+  margin-top: 0 !important;
+  margin-bottom: 25px !important;
+
+  background-color: white !important;
+  color: black !important;
+
+  border: 2px solid black !important;
+  border-radius: 8px !important;
+
+  text-align: center !important;
+}
+/* LARGHEZZA UNIFORME PAGINE INTERNE */
+
+header,
+main {
+  width: calc(100% - 260px) !important;
+  max-width: 800px !important;
+  margin-left: 260px !important;
+  margin-right: auto !important;
+}
+
+/* Uniforma le sezioni con planimetrie */
+
+.sezione-planimetrie {
+  width: 100% !important;
+  max-width: 600px !important;
+}
+
+/* Uniforma le immagini delle planimetrie */
+
+.planimetria {
+  width: 100% !important;
+  max-width: 600px !important;
+}
+
+/* Uniforma i testi descrittivi */
+
+.testo-portami,
+.testo-seleziona,
+.info-docente {
+  max-width: 600px !important;
+}
+
+/* Uniforma i pulsanti principali */
+
+.porta-mi {
+  max-width: 600px !important;
+}
+
+.blocca-audio {
+  max-width: 220px !important;
+}
+/* UNIFORMAZIONE DEFINITIVA PAGINE */
+
+:root {
+  --larghezza-pagina: 520px;
+  --larghezza-pulsanti: 430px;
+  --larghezza-planimetrie: 380px;
+}
+
+
+
+/* Tutte le pagine hanno la stessa larghezza */
+
+header,
+main {
+  width: calc(100% - 260px) !important;
+  max-width: var(--larghezza-pagina) !important;
+
+  margin-left: 260px !important;
+  margin-right: auto !important;
+
+  box-sizing: border-box !important;
+}
+
+
+
+/* Titoli tutti uguali */
+
+h1,
+.nome-docente {
+  font-size: 4rem !important;
+  margin-bottom: 15px !important;
+}
+
+
+
+/* Testi principali uniformi */
+
+p,
+.testo-seleziona,
+.testo-portami,
+.info-docente {
+  max-width: var(--larghezza-pagina) !important;
+  font-size: 1.25rem !important;
+  text-align: center !important;
+}
+
+
+
+/* Info docente non enorme */
+
+.info-docente {
+  font-size: 1.7rem !important;
+  font-weight: bold !important;
+  margin-top: 0 !important;
+  margin-bottom: 20px !important;
+}
+
+
+
+/* Pulsanti tutti uguali */
+
+button,
+.docente button,
+.porta-mi {
+  max-width: var(--larghezza-pulsanti) !important;
+}
+
+
+
+/* PORTAMI uguale in tutte le pagine */
+
+.porta-mi {
+  width: 100% !important;
+
+  font-size: 2rem !important;
+  padding: 25px !important;
+
+  margin-top: 20px !important;
+  margin-bottom: 8px !important;
+}
+
+
+
+/* Blocca audio più piccolo e uniforme */
+
+.blocca-audio {
+  max-width: 220px !important;
+  font-size: 0.9rem !important;
+  padding: 10px 12px !important;
+}
+
+
+
+/* Planimetrie più controllate */
+
+.sezione-planimetrie {
+  width: 100% !important;
+  max-width: var(--larghezza-planimetrie) !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  text-align: center !important;
+}
+
+
+
+/* Titoli planimetrie più piccoli */
+
+.sezione-planimetrie h2 {
+  font-size: 1.7rem !important;
+}
+
+.sezione-planimetrie h3 {
+  font-size: 1.3rem !important;
+}
+
+
+
+/* Immagini planimetrie uniformi */
+
+.planimetria {
+  width: 100% !important;
+  max-width: var(--larghezza-planimetrie) !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  display: block !important;
+}
+
+
+
+/* Elenco docenti stessa larghezza delle altre pagine */
+
+.docente {
+  max-width: var(--larghezza-pulsanti) !important;
+}
+/* CORREZIONE FINALE: TESTI LARGHI E CENTRATI */
+
+header,
+main {
+  width: calc(100% - 260px) !important;
+  max-width: none !important;
+
+  margin-left: 260px !important;
+  margin-right: 0 !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+
+  box-sizing: border-box !important;
+}
+
+
+
+/* Testi centrati e più estesi */
+
+p,
+.testo-home,
+.testo-seleziona,
+.testo-portami,
+.info-docente {
+  max-width: 900px !important;
+  width: auto !important;
+
+  text-align: center !important;
+}
+
+
+
+/* Mantieni grandezza normale dei testi */
+
+p {
+  font-size: 1.2rem !important;
+}
+
+.testo-seleziona {
+  font-size: 1.8rem !important;
+  font-weight: bold !important;
+}
+
+.testo-portami {
+  font-size: 1.3rem !important;
+}
+
+
+
+/* Titoli centrati e dimensione normale */
+
+h1,
+.nome-docente {
+  font-size: 4rem !important;
+  text-align: center !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+  text-align: center !important;
+}
+
+
+
+/* Pulsanti centrati e non troppo larghi */
+
+button,
+.porta-mi,
+.docente button {
+  max-width: 600px !important;
+}
+
+
+
+/* Planimetrie più piccole, ma senza restringere tutta la pagina */
+
+.sezione-planimetrie {
+  max-width: 500px !important;
+  width: 100% !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  text-align: center !important;
+}
+
+.planimetria {
+  max-width: 500px !important;
+  width: 100% !important;
+
+  display: block !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+
+/* Blocca audio resta piccolo */
+
+.blocca-audio {
+  max-width: 220px !important;
+}
+
+/* HOME PIÙ GRANDE RISPETTO ALLE PAGINE INTERNE */
+
+body.home header,
+body.home main {
+  max-width: none !important;
+  width: calc(100% - 260px) !important;
+
+  margin-left: 260px !important;
+  margin-right: 0 !important;
+
+  align-items: center !important;
+  text-align: center !important;
+}
+
+body.home .testo-home {
+  max-width: 1000px !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+body.home .testo-home p {
+  max-width: 1000px !important;
+  font-size: 1.35rem !important;
+  line-height: 1.7 !important;
+}
+
+body.home .intro-principale {
+  font-size: 2rem !important;
+}
+
+body.home h1 {
+  font-size: 4.5rem !important;
+}
+
+body.home h2 {
+  font-size: 2.2rem !important;
+}
+
+body.home button {
+  max-width: 650px !important;
+}
+/* HOME DIMENSIONE INTERMEDIA DEFINITIVA */
+
+body.home header,
+body.home main {
+  width: calc(100% - 260px) !important;
+  max-width: none !important;
+
+  margin-left: 260px !important;
+  margin-right: 0 !important;
+
+  padding-left: 45px !important;
+  padding-right: 45px !important;
+
+  align-items: center !important;
+  text-align: center !important;
+}
+
+/* LOGO HOME */
+
+body.home .logo {
+  width: 430px !important;
+  max-width: 88% !important;
+}
+
+/* TITOLO ORIENTAMI */
+
+body.home h1 {
+  font-size: 4.7rem !important;
+  margin-bottom: 22px !important;
+}
+
+/* UNIVERSITÀ DEL SALENTO */
+
+body.home .universita {
+  font-size: 1.38rem !important;
+  letter-spacing: 4px !important;
+}
+
+/* TESTO HOME */
+
+body.home .testo-home {
+  width: 100% !important;
+  max-width: 980px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  text-align: center !important;
+}
+
+/* PARAGRAFI HOME */
+
+body.home .testo-home p {
+  width: 100% !important;
+  max-width: 980px !important;
+
+  font-size: 1.22rem !important;
+  line-height: 1.65 !important;
+
+  text-align: center !important;
+}
+
+/* BENVENUTO SU ORIENTAMI */
+
+body.home .intro-principale {
+  font-size: 1.9rem !important;
+  font-weight: bold !important;
+}
+
+/* TITOLO SELEZIONA SEDE */
+
+body.home h2 {
+  font-size: 2.2rem !important;
+}
+
+/* PULSANTI HOME */
+
+body.home main button {
+  max-width: 610px !important;
+
+  font-size: 1.2rem !important;
+  padding: 19px !important;
+}
+s

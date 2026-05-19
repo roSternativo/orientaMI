@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>OrientaMI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home">
+
+  <div class="navigazione-rapida">
+
+    <button onclick="vaiHome()">
+      🏠 Home
+    </button>
+
+    <button onclick="vaiIndietro()">
+      ◀️ Indietro
+    </button>
+
+    <button onclick="vaiAvanti()">
+      ▶️ Avanti
+    </button>
+
+  </div>
+
+  <div class="accessibilita">
+
+  <button onclick="leggiPagina()">
+    🔊 Ascolta pagina
+  </button>
+
+  <button onclick="bloccaLettura()">
+    ⏹️ Blocca lettura
+  </button>
+
+  <button onclick="attivaContrasto()">
+    🌙 Alto contrasto
+  </button>
+
+  <button onclick="testoGrande()">
+    🔎 Testo grande
+  </button>
+
+</div>
+
+  </div>
+
+  <header>
+
+    <img 
+      src="logo.png"
+      alt="Logo Università del Salento"
+      class="logo"
+    >
+
+    <h2 class="universita">
+    </h2>
+
+    <h1>OrientaMI</h1>
+
+   <div class="testo-home">
+
+  <p class="intro-principale">
+    Benvenuto su OrientaMI
+  </p>
+
+  <p>
+    Ora puoi iniziare a utilizzarmi per orientarti all’interno delle sedi universitarie in modo semplice, chiaro e autonomo.
+  </p>
+
+  <p>
+    Seleziona il dipartimento o l’edificio che desideri raggiungere, lasciati guidare passo dopo passo tra i servizi disponibili.
+     </p>
+
+      <p>
+    OrientaMI ti accompagna nella ricerca di aule, uffici, percorsi e punti di interesse, offrendo indicazioni precise.
+  </p>
+
+  <p>
+    Puoi utilizzare le funzioni di accessibilità per ascoltare il contenuto della pagina, aumentare la dimensione del testo o attivare la modalità ad alto contrasto.
+  </p>
+
+</div>
+
+  </header>
+
+  <main>
+
+    <h2>EDIFICI</h2>
+
+    <button>
+      Campus Ecotekne
+    </button>
+
+    <button onclick="window.location.href='studium2000.html'">
+  Studium 2000
+</button>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

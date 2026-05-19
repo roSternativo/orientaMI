@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aula Studio - OrientaMI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="navigazione-rapida">
+
+    <button onclick="vaiHome()">
+      🏠 Home
+    </button>
+
+    <button onclick="vaiIndietro()">
+      ◀️ Indietro
+    </button>
+
+    <button onclick="vaiAvanti()">
+      ▶️ Avanti
+    </button>
+
+  </div>
+
+  <div class="accessibilita">
+
+  <button onclick="leggiPagina()">
+    🔊 Ascolta pagina
+  </button>
+
+  <button onclick="bloccaLettura()">
+    ⏹️ Blocca lettura
+  </button>
+
+  <button onclick="attivaContrasto()">
+    🌙 Alto contrasto
+  </button>
+
+  <button onclick="testoGrande()">
+    🔎 Testo grande
+  </button>
+
+</div>
+  <header>
+
+    <h1>Aula Studio</h1>
+
+    <p>
+      Percorso guidato verso l’aula studio
+    </p>
+
+  </header>
+
+  <main>
+
+    <button onclick="avviaAulaStudio()" class="porta-mi">
+      📍 PORTAMI
+    </button>
+    <button onclick="bloccaAudioPercorso()" class="blocca-audio">
+  ⏹️ Blocca audio percorso
+</button>
+<section class="sezione-planimetrie">
+
+  <h2>Planimetrie Aula Studio</h2>
+
+  <p>
+    Consulta le planimetrie disponibili per orientarti verso l’aula studio.
+  </p>
+
+  <div class="contenitore-planimetria">
+
+    <h3>Primo piano</h3>
+
+    <img
+      src="planimetria-primo-piano.png"
+      alt="Planimetria del primo piano per il percorso verso l’aula studio"
+      class="planimetria"
+    >
+
+  </div>
+
+  <div class="contenitore-planimetria">
+
+    <h3>Piano seminterrato</h3>
+
+    <img
+      src="planimetria-seminterrato.png"
+      alt="Planimetria del piano seminterrato per il percorso verso l’aula studio"
+      class="planimetria"
+    >
+
+  </div>
+
+</section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Uffici Docenti - OrientaMI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="navigazione-rapida">
+
+    <button onclick="vaiHome()">
+      🏠 Home
+    </button>
+
+    <button onclick="vaiIndietro()">
+      ◀️ Indietro
+    </button>
+
+    <button onclick="vaiAvanti()">
+      ▶️ Avanti
+    </button>
+
+  </div>
+
+  <div class="accessibilita">
+
+  <button onclick="leggiPagina()">
+    🔊 Ascolta pagina
+  </button>
+
+  <button onclick="bloccaLettura()">
+    ⏹️ Blocca lettura
+  </button>
+
+  <button onclick="attivaContrasto()">
+    🌙 Alto contrasto
+  </button>
+
+  <button onclick="testoGrande()">
+    🔎 Testo grande
+  </button>
+
+</div>
+  <header>
+
+    <h1>Uffici Docenti</h1>
+
+    <p>
+      Cerca il docente oppure utilizza la ricerca vocale
+    </p>
+
+  </header>
+
+  <main>
+
+   <input
+  type="text"
+  placeholder="Cerca docente..."
+  class="ricerca"
+  id="barraRicerca"
+  onkeyup="cercaDocente()"
+>
+
+<button class="microfono" onclick="ricercaVocale()">
+  🎤 Ricerca vocale
+</button>
+
+
+<div class="docente docente-item">
+  <button>
+    <strong>Agostini Igor</strong><br>
+    I Piano — Stanza 26
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Angelelli Paola</strong><br>
+    Piano Terra — Stanza 39
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Aprile Marcello</strong><br>
+    I Piano — Stanza 4
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Arima Serena</strong><br>
+    Piano Terra — Stanza 31
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Armenise Gabriella</strong><br>
+    Piano Terra — Stanza 20
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Ascalone Stefano</strong><br>
+    I Piano — Stanza 15
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Baldi Paolo</strong><br>
+    II Piano — Stanza 14
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Battaglia Fiorella</strong><br>
+    II Piano — Stanza 14
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Bernardini Marco</strong><br>
+    I Piano — Stanza 39
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Bevilacqua Emiliano</strong><br>
+    Piano Terra — Stanza 29
+  </button>
+</div>
+<div class="docente docente-item">
+  <button>
+    <strong>Bray Nadia</strong><br>
+    II Piano — Stanza 17-18
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Brusotti Marco</strong><br>
+    II Piano — Stanza 7
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Capone Alessandro</strong><br>
+    II Piano — Stanza 20-21
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Carparelli Mario</strong><br>
+    I Piano — Stanza 30
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Ciavolino Enrico</strong><br>
+    Piano Terra — Stanza 31
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Ciracì Fabio</strong><br>
+    I Piano — Stanza 31
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Ciricugno Eugenio Emanuele</strong><br>
+    I Piano — Stanza 34
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Cisternino Debora</strong><br>
+    I Piano — Stanza 13
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Colaci Anna Maria</strong><br>
+    Piano Terra — Stanza 38
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Colomba Caterina</strong><br>
+    I Piano — Stanza 22
+  </button>
+</div>
+<div class="docente docente-item">
+  <button>
+    <strong>Corciulo Silvia</strong><br>
+    I Piano — Stanza 38
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Cotardo Adriana Domenica</strong><br>
+    I Piano — Stanza 37
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Cremonesini Valentina</strong><br>
+    Piano Terra — Stanza 30
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Cristante Stefano</strong><br>
+    Piano Terra — Stanza 21
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Davoli Paola</strong><br>
+    I Piano — Stanza 5-6
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>De Bellis Ennio</strong><br>
+    I Piano — Stanza 31
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>De Falco Tiziana</strong><br>
+    Piano Terra — Stanza 4
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>De Laurentiis Antonella</strong><br>
+    I Piano — Stanza 10
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>De Leo Daniela</strong><br>
+    II Piano — Stanza 5-6
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>De Luca Daniele</strong><br>
+    Piano Terra — Stanza 37
+  </button>
+</div>
+<div class="docente docente-item">
+  <button>
+    <strong>De Luca Maurizio</strong><br>
+    I Piano — Stanza 13
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>De Masi Angela</strong><br>
+    I Piano — Stanza 38
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>De Nardis Fabio</strong><br>
+    I Piano — Stanza 11
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>De Pascalis Lucia</strong><br>
+    I Piano — Stanza 36
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>De Salve Tiziano</strong><br>
+    I Piano — Stanza 19
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Del Gottardo Ezio</strong><br>
+    Piano Terra — Stanza 17
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Delle Donne Saulo</strong><br>
+    II Piano — Stanza 20-21
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Di Nunno Nunzio</strong><br>
+    Piano Terra — Stanza 15
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Dolce Maria Renata</strong><br>
+    I Piano — Stanza 22
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Dottorandi</strong><br>
+    I Piano — Stanza 20-21
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Emeriti / Onorari</strong><br>
+    II Piano — Stanza 10
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Fazio Domenico</strong><br>
+    I Piano — Stanza 30
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Fiorucci Andrea</strong><br>
+    Piano Terra — Stanza 19
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Forges Davanzati Guglielmo</strong><br>
+    Piano Terra — Stanza 10
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Fornari Maria Cristina</strong><br>
+    I Piano — Stanza 40
+  </button>
+</div>
+<div class="docente docente-item">
+  <button>
+    <strong>Gabellone Anna Rita</strong><br>
+    II Piano — Stanza 4
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Gaiaschi Camilla</strong><br>
+    Piano Terra — Stanza 34
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Gelo Omar</strong><br>
+    Piano Terra — Stanza 27
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Giannachi Francesco</strong><br>
+    II Piano — Stanza 15
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Giannuzzi Anna Maria</strong><br>
+    I Piano — Stanza 40
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Gioffredi Giuseppe</strong><br>
+    Piano Terra — Stanza 26
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Greco Maria Rosa</strong><br>
+    Piano Terra — Stanza 7
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Guidato Ennio</strong><br>
+    I Piano — Stanza 19
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Guido Maria Grazia</strong><br>
+    II Piano — Stanza 13
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Guido Maria Grazia – Direzione</strong><br>
+    I Piano — Stanza 8-9
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Iaia Pietro Luigi</strong><br>
+    II Piano — Stanza 19
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Ingusci Emanuela</strong><br>
+    Piano Terra — Stanza 18
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Isoni Alessandro</strong><br>
+    Piano Terra — Stanza 25
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Laboratorio Geocartografico</strong><br>
+    Seminterrato — Stanza 3-4
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Lecciso Flavia</strong><br>
+    Piano Terra — Stanza 36
+  </button>
+</div>
+<div class="docente docente-item">
+  <button>
+    <strong>Legittimo Roberta</strong><br>
+    I Piano — Stanza 13
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Levante Annalisa</strong><br>
+    Piano Terra — Stanza 36
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Lodedo Tina</strong><br>
+    Piano Terra — Stanza 28
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Longo Mariano – Direzione</strong><br>
+    I Piano — Stanza 17-18
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Lorubbio Vincenzo</strong><br>
+    Piano Terra — Stanza 15
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button onclick="window.location.href='katialotteria.html'">
+    <strong>Lotteria Katia</strong><br>
+    Piano Terra — Stanza 6
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Lucarella Domenico</strong><br>
+    I Piano — Stanza 33
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Magurano Antonio</strong><br>
+    I Piano — Stanza 35
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Mancarella Marco</strong><br>
+    I Piano — Stanza 3
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Mangia Silvia</strong><br>
+    Piano Terra — Stanza 5
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Manieri Alessandra</strong><br>
+    II Piano — Stanza 22
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Mannarini Terri</strong><br>
+    Piano Terra — Stanza 12
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Marano Giorgia</strong><br>
+    I Piano — Stanza 38
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Margarito Alessandra</strong><br>
+    Piano Terra — Stanza 11
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Marrone Marco</strong><br>
+    I Piano — Stanza 3
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Marselli Giuseppina</strong><br>
+    I Piano — Stanza 13
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Miglietta Anna</strong><br>
+    Primo Piano — Stanza 15
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Mirabella Felice Gianluca</strong><br>
+    I Piano — Stanza 38
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Negro Antonella</strong><br>
+    I Piano — Stanza 14
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Nolasco Luca</strong><br>
+    I Piano — Stanza 35
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Paiano Anna Paola</strong><br>
+    Piano Terra — Stanza 29
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Palomba Elisa</strong><br>
+    Piano Terra — Stanza 38
+  </button>
+</div>
+<div class="docente docente-item">
+  <button>
+    <strong>Papalato Valerio</strong><br>
+    I Piano — Stanza 14
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Papuli Aula</strong><br>
+    I Piano — Stanza A.P.
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Parisi Rosa</strong><br>
+    Piano Terra — Stanza 25
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Paulì Gabriella</strong><br>
+    Primo Piano — Stanza 19
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Pellè Natascia</strong><br>
+    I Piano — Stanza 12
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Pellè Maria Loredana</strong><br>
+    II Piano — Stanza 16
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Pesare Mimmo</strong><br>
+    Piano Terra — Stanza 37
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Petracca Luciana</strong><br>
+    Piano Terra — Stanza 27
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Pinnelli Stefania</strong><br>
+    Piano Terra — Stanza 19
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Pisanò Attilio</strong><br>
+    Piano Terra — Stanza 26
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Politi Gloria</strong><br>
+    I Piano — Stanza 29
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Ponzio Luciano</strong><br>
+    II Piano — Stanza 15
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Preite Gianpasquale</strong><br>
+    Piano Terra — Stanza 25
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Punzi Corrado</strong><br>
+    Piano Terra — Stanza 33
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Quarta Cosimo Alessandro</strong><br>
+    I Piano — Stanza 15
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Renna Annalena</strong><br>
+    I Piano — Stanza 27
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Retucci Fiorella</strong><br>
+    II Piano — Stanza 8-9
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Ria Demetrio</strong><br>
+    Piano Terra — Stanza 14
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Rizzello Salvatore</strong><br>
+    II Piano — Stanza 3
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Rizzo Anna Maria</strong><br>
+    Piano Terra — Stanza 32
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Rizzo Giorgio</strong><br>
+    II Piano — Stanza 5-6
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Rizzo Luana</strong><br>
+    II Piano — Stanza 17-18
+  </button>
+</div>
+<div class="docente docente-item">
+  <button>
+    <strong>Rochira Alessia</strong><br>
+    Piano Terra — Stanza 12
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Rosato Rosa</strong><br>
+    Seminterrato — Stanza 5
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Rubino Elisa</strong><br>
+    II Piano — Stanza 8-9
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Russo Federico</strong><br>
+    Piano Terra — Stanza 35
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Salento Angelo</strong><br>
+    Piano Terra — Stanza 35
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Salvatore Sergio</strong><br>
+    Piano Terra — Stanza 3
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Scardicchio Andrea</strong><br>
+    II Piano — Stanza 10
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Scarinci Alessia</strong><br>
+    Piano Terra — Stanza 14
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Schimera Roberto</strong><br>
+    I Piano — Stanza 28
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Serio Maria Rita</strong><br>
+    Piano Terra — Stanza 26
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Siciliano Sarah</strong><br>
+    Piano Terra — Stanza 30
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Solombrino Maria Cristina</strong><br>
+    Piano Terra — Stanza 8-9
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Sorrentino Clarissa</strong><br>
+    Piano Terra — Stanza 20
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Sozzo Giovanni</strong><br>
+    I Piano — Stanza 13
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Spina Ferdinando</strong><br>
+    Piano Terra — Stanza 34
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Stanca Elisa</strong><br>
+    I Piano — Stanza 37
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Strazzeri Irene</strong><br>
+    Piano Terra — Stanza 32
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Sulpizio Fabio Angelo</strong><br>
+    II Piano — Stanza 11
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Sunna Claudia</strong><br>
+    Piano Terra — Stanza 28
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Tarantino Maria Grazia</strong><br>
+    Seminterrato — Stanza 6
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Tateo Giovanni</strong><br>
+    II Piano — Stanza 12
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Tempesta Marcello</strong><br>
+    Piano Terra — Stanza 16
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Tisè Bernadette</strong><br>
+    II Piano — Stanza 5-6
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Turi Marco</strong><br>
+    Piano Terra — Stanza 39
+  </button>
+</div>
+<div class="docente docente-item">
+  <button>
+    <strong>Tutor Scienze Formazione Primaria</strong><br>
+    Piano Terra — Stanza 13
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Tuzzo Sabina</strong><br>
+    I Piano — Stanza 32
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Uggetti Lorenzo</strong><br>
+    I Piano — Stanza 6
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Venuleo Claudia</strong><br>
+    Piano Terra — Stanza 36
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Vergari Ughetta</strong><br>
+    Piano Terra — Stanza 18
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Vignola Marta</strong><br>
+    Piano Terra — Stanza 33
+  </button>
+</div>
+
+<div class="docente docente-item">
+  <button>
+    <strong>Villani Patrizia</strong><br>
+    I Piano — Stanza 16
+  </button>
+</div>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

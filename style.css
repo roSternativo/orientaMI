@@ -990,3 +990,68 @@ body.home main button {
   padding: 19px !important;
 }
 s
+/* CORREZIONE ONLINE: TESTI FERMI, CENTRATI E RESPONSIVE */
+
+header,
+main {
+  width: calc(100% - 260px) !important;
+  max-width: none !important;
+
+  margin-left: 260px !important;
+  margin-right: 0 !important;
+
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+
+  text-align: center !important;
+}
+
+p,
+.testo-home,
+.testo-home p,
+.testo-seleziona,
+.testo-portami,
+.info-docente {
+  max-width: 900px !important;
+  width: 100% !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+button,
+.porta-mi,
+.docente button {
+  max-width: 600px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.sezione-planimetrie {
+  max-width: 520px !important;
+  width: 100% !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  text-align: center !important;
+}
+
+.planimetria {
+  max-width: 520px !important;
+  width: 100% !important;
+
+  display: block !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

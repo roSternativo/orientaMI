@@ -1247,3 +1247,76 @@ body.home main button {
 
   margin-top: 10px !important;
 }
+/* FIX DEFINITIVO HOME: TESTO NON IN COLONNA */
+
+body.home header,
+body.home main {
+  margin-left: 260px !important;
+  width: calc(100% - 260px) !important;
+  max-width: none !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+
+  text-align: center !important;
+}
+
+/* DESCRIZIONE ORIENTAMI */
+body.home .testo-home {
+  width: 100% !important;
+  max-width: 1000px !important;
+
+  display: block !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  text-align: center !important;
+}
+
+/* PARAGRAFI DELLA HOME */
+body.home .testo-home p {
+  width: 100% !important;
+  max-width: 1000px !important;
+
+  display: block !important;
+
+  font-size: 1.2rem !important;
+  line-height: 1.65 !important;
+
+  text-align: center !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 12px !important;
+
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+/* BENVENUTO */
+body.home .intro-principale {
+  font-size: 1.9rem !important;
+  font-weight: bold !important;
+}
+
+/* SELEZIONA LA SEDE */
+body.home h2 {
+  font-size: 2.2rem !important;
+  margin-top: 30px !important;
+}
+
+/* PULSANTI ECOTEKNE E STUDIUM 2000 */
+body.home main button {
+  width: 100% !important;
+  max-width: 560px !important;
+
+  padding: 18px !important;
+
+  font-size: 1.15rem !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

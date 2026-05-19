@@ -1204,3 +1204,46 @@ button,
     font-size: 1.8rem !important;
   }
 }
+/* HOME - TESTO E PULSANTI PIÙ COMPATTI */
+
+body.home .testo-home {
+  max-width: 850px !important;
+  width: 100% !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  text-align: center !important;
+}
+
+body.home .testo-home p {
+  max-width: 850px !important;
+
+  font-size: 1.08rem !important;
+  line-height: 1.55 !important;
+
+  margin-bottom: 10px !important;
+
+  text-align: center !important;
+}
+
+body.home .intro-principale {
+  font-size: 1.65rem !important;
+  margin-bottom: 12px !important;
+}
+
+body.home h2 {
+  font-size: 2rem !important;
+  margin-top: 25px !important;
+  margin-bottom: 10px !important;
+}
+
+body.home main button {
+  max-width: 500px !important;
+
+  padding: 16px !important;
+
+  font-size: 1.1rem !important;
+
+  margin-top: 10px !important;
+}

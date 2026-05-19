@@ -1055,3 +1055,152 @@ button,
   margin-left: auto !important;
   margin-right: auto !important;
 }
+/* SISTEMAZIONE FINALE RESPONSIVE */
+
+/* Computer: contenuto ordinato con spazio per i tasti a sinistra */
+header,
+main {
+  margin-left: 260px !important;
+  margin-right: 0 !important;
+
+  width: auto !important;
+  max-width: none !important;
+
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+p,
+.testo-home p,
+.testo-seleziona,
+.testo-portami,
+.info-docente {
+  max-width: 950px !important;
+  width: auto !important;
+
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+button,
+.porta-mi,
+.docente button {
+  max-width: 600px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Planimetrie più piccole ma centrate */
+.sezione-planimetrie {
+  max-width: 520px !important;
+  width: 100% !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  text-align: center !important;
+}
+
+.planimetria {
+  max-width: 520px !important;
+  width: 100% !important;
+
+  display: block !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Telefono e schermi piccoli */
+@media (max-width: 900px) {
+
+  .navigazione-rapida {
+    position: static !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+
+    gap: 6px !important;
+
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .accessibilita {
+    position: static !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    width: 100% !important;
+
+    margin-bottom: 20px !important;
+  }
+
+  header,
+  main {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  p,
+  .testo-home p,
+  .testo-seleziona,
+  .testo-portami,
+  .info-docente {
+    max-width: 95% !important;
+    width: 95% !important;
+
+    text-align: center !important;
+  }
+
+  button,
+  .porta-mi,
+  .docente button {
+    max-width: 95% !important;
+    width: 95% !important;
+  }
+
+  .sezione-planimetrie {
+    max-width: 95% !important;
+    width: 95% !important;
+  }
+
+  .planimetria {
+    max-width: 95% !important;
+    width: 95% !important;
+  }
+
+  .logo {
+    max-width: 80% !important;
+    width: 300px !important;
+  }
+
+  h1,
+  .nome-docente {
+    font-size: 3rem !important;
+  }
+
+  h2 {
+    font-size: 1.8rem !important;
+  }
+}
